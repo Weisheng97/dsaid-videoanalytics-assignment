@@ -1,0 +1,9 @@
+1) go to command prompt
+2) go to the working directory(inside new_flask folder) using cd
+3) enter command below to build a docker image using the docker file
+ docker build -t weisheng97/flask_ml . 
+4) enter command below to build docker container using the docker image that was created
+docker run -d -p 80:80 (find and insert the image id after 80:80 )
+5) enter command below to see if container is running
+docker ps
+6) to stop docker container, enter command: docker stop weisheng97/flask_ml

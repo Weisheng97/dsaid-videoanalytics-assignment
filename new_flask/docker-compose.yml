@@ -1,0 +1,11 @@
+version: "3.9.6"
+
+services:
+  flask_ml:
+    container_name: flask_ml
+    image: weisheng97/flask_ml
+    ports:
+      -  "8000:8000"
+    build:
+      context: .
+      dockerfile: dockerfile
